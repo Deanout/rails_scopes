@@ -1,0 +1,20 @@
+<h1>Pages#home</h1>
+<p>Find me in app/views/pages/home.html.erb</p>
+
+<h3>Top 3</h5>
+<% @most_viewed.each do |post| %>
+    <p><%= link_to post.title, post %></p>
+<% end %>
+<br />
+
+<h3>Short Reads</h3>
+<% @short_reads.each do |post| %>
+  <p><%= link_to post.title, post %></p>
+<% end %>
+
+<br/>
+
+<h3>Specific Posts</h3>
+<% @specific_posts.each do |post| %>
+  <p><%= link_to post.title, post %></p>
+<% end %>
